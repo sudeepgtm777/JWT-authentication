@@ -2,6 +2,7 @@
 /*
 export default {
   port: Port Number,
-  mongoDbUrl: ""
+  mongoDbUrl: "",
+  logLevel: "info",
 }
 */
