@@ -8,4 +8,7 @@ router.get('/check', (_, res) => {
   res.sendStatus(200);
 });
 
+router.use(user);
+router.use(auth);
+
 export default router;
