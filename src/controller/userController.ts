@@ -13,10 +13,10 @@ export async function createUserHandler(
     const user = await createUser(body);
 
     await sendEmail({
-      from: 'test@example.com',
+      from: 'sudeepgautam33333@gmail.com',
       to: user.email,
       subject: 'Please verify your account!!',
-      text: `Verification code ${user.verificationCode}. Id: ${user._id}`
+      text: `Verification code ${user.verificationCode}. Id: ${user._id}`,
     });
 
     return res.send('User successfully created!!');
